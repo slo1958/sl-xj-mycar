@@ -11,6 +11,7 @@ Class=clApplicationDataGeneric;md_common/clApplicationDataGeneric.xojo_code;&h00
 DesktopWindow=wnd_carInformation;wnd_carInformation.xojo_window;&h00000000656CE7FF;&h0000000000000000;false
 DesktopWindow=Container1;Container1.xojo_window;&h000000005E7277FF;&h0000000000000000;false
 DesktopWindow=Window2;Window2.xojo_window;&h0000000033DD27FF;&h0000000000000000;false
+Class=clEvent;clEvent.xojo_code;&h00000000086637FF;&h0000000000000000;false
 DefaultWindow=Window1
 AppMenuBar=MainMenuBar
 MajorVersion=1
