@@ -1,5 +1,5 @@
 #tag DesktopWindow
-Begin DesktopWindow Window1
+Begin DesktopWindow wnd_configuration
    Backdrop        =   0
    BackgroundColor =   &cFFFFFF
    Composite       =   False
@@ -15,21 +15,18 @@ Begin DesktopWindow Window1
    MacProcID       =   0
    MaximumHeight   =   32000
    MaximumWidth    =   32000
-   MenuBar         =   1795147775
+   MenuBar         =   ""
    MenuBarVisible  =   False
    MinimumHeight   =   64
    MinimumWidth    =   64
    Resizeable      =   True
-   Title           =   "Untitled"
+   Title           =   "Configuration"
    Type            =   0
    Visible         =   True
    Width           =   600
-   Begin DesktopButton Button1
+   Begin DesktopLabel Label1
       AllowAutoDeactivate=   True
       Bold            =   False
-      Cancel          =   False
-      Caption         =   "Button"
-      Default         =   False
       Enabled         =   True
       FontName        =   "System"
       FontSize        =   0.0
@@ -37,30 +34,31 @@ Begin DesktopWindow Window1
       Height          =   20
       Index           =   -2147483648
       Italic          =   False
-      Left            =   67
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      MacButtonStyle  =   0
+      Multiline       =   False
       Scope           =   0
+      Selectable      =   False
       TabIndex        =   0
       TabPanelIndex   =   0
       TabStop         =   True
+      Text            =   "Currency"
+      TextAlignment   =   0
+      TextColor       =   &c000000
       Tooltip         =   ""
-      Top             =   34
+      Top             =   20
       Transparent     =   False
       Underline       =   False
       Visible         =   True
-      Width           =   80
+      Width           =   100
    End
-   Begin DesktopButton Button2
+   Begin DesktopLabel Label2
       AllowAutoDeactivate=   True
       Bold            =   False
-      Cancel          =   False
-      Caption         =   "car info"
-      Default         =   False
       Enabled         =   True
       FontName        =   "System"
       FontSize        =   0.0
@@ -68,92 +66,113 @@ Begin DesktopWindow Window1
       Height          =   20
       Index           =   -2147483648
       Italic          =   False
-      Left            =   77
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      MacButtonStyle  =   0
+      Multiline       =   False
       Scope           =   0
+      Selectable      =   False
       TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
+      Text            =   "Unit for mileage"
+      TextAlignment   =   0
+      TextColor       =   &c000000
       Tooltip         =   ""
-      Top             =   100
+      Top             =   54
       Transparent     =   False
       Underline       =   False
       Visible         =   True
-      Width           =   80
+      Width           =   100
    End
-   Begin DesktopButton Button3
+   Begin DesktopTextField TextField1
       AllowAutoDeactivate=   True
+      AllowFocusRing  =   True
+      AllowSpellChecking=   False
+      AllowTabs       =   False
+      BackgroundColor =   &cFFFFFF
       Bold            =   False
-      Cancel          =   False
-      Caption         =   "event"
-      Default         =   False
       Enabled         =   True
       FontName        =   "System"
       FontSize        =   0.0
       FontUnit        =   0
-      Height          =   20
+      Format          =   ""
+      HasBorder       =   True
+      Height          =   22
+      Hint            =   ""
       Index           =   -2147483648
       Italic          =   False
-      Left            =   56
+      Left            =   132
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      MacButtonStyle  =   0
+      MaximumCharactersAllowed=   0
+      Password        =   False
+      ReadOnly        =   False
       Scope           =   0
       TabIndex        =   2
       TabPanelIndex   =   0
       TabStop         =   True
+      Text            =   ""
+      TextAlignment   =   0
+      TextColor       =   &c000000
       Tooltip         =   ""
-      Top             =   181
+      Top             =   20
       Transparent     =   False
       Underline       =   False
+      ValidationMask  =   ""
       Visible         =   True
       Width           =   80
    End
-   Begin DesktopButton Button4
+   Begin DesktopTextField TextField2
       AllowAutoDeactivate=   True
+      AllowFocusRing  =   True
+      AllowSpellChecking=   False
+      AllowTabs       =   False
+      BackgroundColor =   &cFFFFFF
       Bold            =   False
-      Cancel          =   False
-      Caption         =   "Button"
-      Default         =   False
       Enabled         =   True
       FontName        =   "System"
       FontSize        =   0.0
       FontUnit        =   0
-      Height          =   20
+      Format          =   ""
+      HasBorder       =   True
+      Height          =   22
+      Hint            =   ""
       Index           =   -2147483648
       Italic          =   False
-      Left            =   470
+      Left            =   132
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      MacButtonStyle  =   0
+      MaximumCharactersAllowed=   0
+      Password        =   False
+      ReadOnly        =   False
       Scope           =   0
       TabIndex        =   3
       TabPanelIndex   =   0
       TabStop         =   True
+      Text            =   ""
+      TextAlignment   =   0
+      TextColor       =   &c000000
       Tooltip         =   ""
-      Top             =   260
+      Top             =   54
       Transparent     =   False
       Underline       =   False
+      ValidationMask  =   ""
       Visible         =   True
       Width           =   80
    End
-   Begin DesktopButton Button5
+   Begin DesktopLabel Label3
       AllowAutoDeactivate=   True
       Bold            =   False
-      Cancel          =   False
-      Caption         =   "win4"
-      Default         =   False
       Enabled         =   True
       FontName        =   "System"
       FontSize        =   0.0
@@ -161,116 +180,194 @@ Begin DesktopWindow Window1
       Height          =   20
       Index           =   -2147483648
       Italic          =   False
-      Left            =   67
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      MacButtonStyle  =   0
+      Multiline       =   False
       Scope           =   0
+      Selectable      =   False
       TabIndex        =   4
       TabPanelIndex   =   0
       TabStop         =   True
+      Text            =   "Unit for fuel"
+      TextAlignment   =   0
+      TextColor       =   &c000000
       Tooltip         =   ""
-      Top             =   299
+      Top             =   96
       Transparent     =   False
       Underline       =   False
       Visible         =   True
+      Width           =   100
+   End
+   Begin DesktopTextField TextField3
+      AllowAutoDeactivate=   True
+      AllowFocusRing  =   True
+      AllowSpellChecking=   False
+      AllowTabs       =   False
+      BackgroundColor =   &cFFFFFF
+      Bold            =   False
+      Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
+      Format          =   ""
+      HasBorder       =   True
+      Height          =   22
+      Hint            =   ""
+      Index           =   -2147483648
+      Italic          =   False
+      Left            =   132
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      MaximumCharactersAllowed=   0
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      TabIndex        =   5
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Text            =   ""
+      TextAlignment   =   0
+      TextColor       =   &c000000
+      Tooltip         =   ""
+      Top             =   96
+      Transparent     =   False
+      Underline       =   False
+      ValidationMask  =   ""
+      Visible         =   True
       Width           =   80
+   End
+   Begin DesktopLabel Label4
+      AllowAutoDeactivate=   True
+      Bold            =   False
+      Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
+      Height          =   20
+      Index           =   -2147483648
+      Italic          =   False
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Multiline       =   False
+      Scope           =   0
+      Selectable      =   False
+      TabIndex        =   6
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Text            =   "Fast access event"
+      TextAlignment   =   0
+      TextColor       =   &c000000
+      Tooltip         =   ""
+      Top             =   155
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   True
+      Width           =   192
+   End
+   Begin DesktopPopupMenu PopupMenu1
+      AllowAutoDeactivate=   True
+      Bold            =   False
+      Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
+      Height          =   20
+      Index           =   -2147483648
+      InitialValue    =   ""
+      Italic          =   False
+      Left            =   132
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Scope           =   0
+      SelectedRowIndex=   0
+      TabIndex        =   7
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   194
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   True
+      Width           =   130
+   End
+   Begin DesktopPopupMenu PopupMenu2
+      AllowAutoDeactivate=   True
+      Bold            =   False
+      Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
+      Height          =   20
+      Index           =   -2147483648
+      InitialValue    =   ""
+      Italic          =   False
+      Left            =   132
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Scope           =   0
+      SelectedRowIndex=   0
+      TabIndex        =   8
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   226
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   True
+      Width           =   130
+   End
+   Begin DesktopPopupMenu PopupMenu3
+      AllowAutoDeactivate=   True
+      Bold            =   False
+      Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
+      Height          =   20
+      Index           =   -2147483648
+      InitialValue    =   ""
+      Italic          =   False
+      Left            =   132
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Scope           =   0
+      SelectedRowIndex=   0
+      TabIndex        =   9
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   258
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   True
+      Width           =   130
    End
 End
 #tag EndDesktopWindow
 
 #tag WindowCode
-	#tag Event
-		Sub Opening()
-		  v = new clVehicle
-		  s = new clMyCarData
-		  
-		End Sub
-	#tag EndEvent
-
-
-	#tag Property, Flags = &h0
-		s As clMyCarData
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		v As clVehicle
-	#tag EndProperty
-
-
 #tag EndWindowCode
 
-#tag Events Button1
-	#tag Event
-		Sub Pressed()
-		  TestPref
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events Button2
-	#tag Event
-		Sub Pressed()
-		  wnd_carInformation.Show
-		  wnd_carInformation.LoadUI s,v
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events Button3
-	#tag Event
-		Sub Pressed()
-		  
-		  if v.brand = "" then v.Brand = "Volvo"
-		  if v.model = "" then v.Model = "X40"
-		  if v.NumberPlate = "" then v.NumberPlate = "1-ABC-888"
-		  
-		  var c as new clEvent(1)
-		  c.eventType = CarEventTypes.PayToll
-		  
-		  wnd_Generic_Event.Show
-		  wnd_Generic_Event.LoadFromEvent(s, v, c)
-		  
-		  wnd_Generic_Event.Show
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events Button4
-	#tag Event
-		Sub Pressed()
-		  
-		  var wnds() as DesktopWindow
-		  
-		  
-		  wnds.add( new wnd_generic_Event())
-		  wnds.add(new wnd_carInformation)
-		  wnds.add(new wnd_configuration)
-		  
-		  for each wnd as DesktopWindow in wnds
-		    for each c as object in wnd.Controls
-		      System.DebugLog(wnd.Title + ":" + DesktopControl(c).Name)
-		      
-		    next
-		    
-		  next
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events Button5
-	#tag Event
-		Sub Pressed()
-		  
-		  
-		  var w as new wnd_standard
-		  
-		  w.LoadUI(s)
-		  
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag ViewBehavior
 	#tag ViewProperty
 		Name="Name"

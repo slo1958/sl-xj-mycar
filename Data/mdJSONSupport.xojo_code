@@ -1,36 +1,44 @@
 #tag Module
-Protected Module md_common
+Protected Module mdJSONSupport
 	#tag Method, Flags = &h0
-		Sub ShowHelpFor(messageID as string)
+		Sub genericInitFromJSON(c as object, j as JSONItem)
 		  
-		  var msg() as string = clHelpSupport.getHelpInfo(MessageID)
 		  
-		  System.DebugLog(messageID)
-		  System.DebugLog(string.FromArray(msg))
+		  var t as Introspection.TypeInfo = Introspection.GetType(c)
+		  var defaultV as variant
 		  
+		  for each p as Introspection.PropertyInfo in t.GetProperties
+		    if p.CanWrite then
+		      var n as String = p.Name
+		      
+		      p.Value(c) = j.Lookup(n,defaultV)
+		      
+		    end if
+		    
+		  next
 		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Sub TestPref()
+		Function GenericSerializeToJSON(c as object) As JSONItem
 		  
-		  var c1 as new clApplicationDataGeneric(app.kAppDataFolderName, app.kPreferenceFileName)
+		  var t as Introspection.TypeInfo = Introspection.GetType(c)
 		  
+		  var j as new JSONItem
 		  
-		  c1.SetPrefParam("mytest","is done" )
+		  for each p as Introspection.PropertyInfo in t.GetProperties
+		    if p.CanRead then
+		      var n as String = p.Name
+		      
+		      j.Value(n) = p.Value(c)
+		      
+		      
+		    end if
+		    
+		  next
 		  
-		  
-		  c1.SavePreferences(nil)
-		  
-		  c1 = nil
-		  
-		  var c2 as new clApplicationDataGeneric(app.kAppDataFolderName, app.kPreferenceFileName)
-		  
-		  c2.LoadPreferences(nil)
-		  
-		  return
-		  
-		End Sub
+		  return j
+		End Function
 	#tag EndMethod
 
 

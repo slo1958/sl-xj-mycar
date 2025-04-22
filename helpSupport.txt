@@ -1,0 +1,19 @@
+[{"language": "", "texts": {
+
+"alpha":"beta"
+
+,"bth_txf_dateFirst":{"title":"something", "body": "something else"}
+
+,"bth_txf_datePurchase":{"title":"Date of purchase", "body": "something else"}
+
+,"bth_txf_dateSold":"kkk"
+
+}}
+
+, {"language":"FR", "texts":{
+
+"Gamma":"delta"
+
+}}
+
+]

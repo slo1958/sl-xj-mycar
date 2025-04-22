@@ -1,5 +1,5 @@
 #tag DesktopWindow
-Begin DesktopWindow Window1
+Begin DesktopWindow wnd_standard
    Backdrop        =   0
    BackgroundColor =   &cFFFFFF
    Composite       =   False
@@ -15,7 +15,7 @@ Begin DesktopWindow Window1
    MacProcID       =   0
    MaximumHeight   =   32000
    MaximumWidth    =   32000
-   MenuBar         =   1795147775
+   MenuBar         =   ""
    MenuBarVisible  =   False
    MinimumHeight   =   64
    MinimumWidth    =   64
@@ -24,12 +24,9 @@ Begin DesktopWindow Window1
    Type            =   0
    Visible         =   True
    Width           =   600
-   Begin DesktopButton Button1
+   Begin DesktopLabel Label1
       AllowAutoDeactivate=   True
       Bold            =   False
-      Cancel          =   False
-      Caption         =   "Button"
-      Default         =   False
       Enabled         =   True
       FontName        =   "System"
       FontSize        =   0.0
@@ -37,60 +34,62 @@ Begin DesktopWindow Window1
       Height          =   20
       Index           =   -2147483648
       Italic          =   False
-      Left            =   67
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      MacButtonStyle  =   0
+      Multiline       =   False
       Scope           =   0
+      Selectable      =   False
       TabIndex        =   0
       TabPanelIndex   =   0
       TabStop         =   True
+      Text            =   "Select your car"
+      TextAlignment   =   0
+      TextColor       =   &c000000
       Tooltip         =   ""
-      Top             =   34
+      Top             =   20
       Transparent     =   False
       Underline       =   False
       Visible         =   True
-      Width           =   80
+      Width           =   152
    End
-   Begin DesktopButton Button2
+   Begin DesktopPopupMenu PopupMenu1
       AllowAutoDeactivate=   True
       Bold            =   False
-      Cancel          =   False
-      Caption         =   "car info"
-      Default         =   False
       Enabled         =   True
       FontName        =   "System"
       FontSize        =   0.0
       FontUnit        =   0
       Height          =   20
       Index           =   -2147483648
+      InitialValue    =   ""
       Italic          =   False
-      Left            =   77
+      Left            =   169
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
-      MacButtonStyle  =   0
       Scope           =   0
+      SelectedRowIndex=   0
       TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   100
+      Top             =   20
       Transparent     =   False
       Underline       =   False
       Visible         =   True
-      Width           =   80
+      Width           =   151
    End
-   Begin DesktopButton Button3
+   Begin DesktopButton Button1
       AllowAutoDeactivate=   True
       Bold            =   False
       Cancel          =   False
-      Caption         =   "event"
+      Caption         =   "Add.."
       Default         =   False
       Enabled         =   True
       FontName        =   "System"
@@ -99,7 +98,7 @@ Begin DesktopWindow Window1
       Height          =   20
       Index           =   -2147483648
       Italic          =   False
-      Left            =   56
+      Left            =   377
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -111,13 +110,45 @@ Begin DesktopWindow Window1
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   181
+      Top             =   20
       Transparent     =   False
       Underline       =   False
       Visible         =   True
       Width           =   80
    End
-   Begin DesktopButton Button4
+   Begin DesktopLabel Label2
+      AllowAutoDeactivate=   True
+      Bold            =   False
+      Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
+      Height          =   20
+      Index           =   -2147483648
+      Italic          =   False
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      Multiline       =   False
+      Scope           =   0
+      Selectable      =   False
+      TabIndex        =   3
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Text            =   "Record an event:"
+      TextAlignment   =   0
+      TextColor       =   &c000000
+      Tooltip         =   ""
+      Top             =   81
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   True
+      Width           =   152
+   End
+   Begin DesktopButton btn_event
       AllowAutoDeactivate=   True
       Bold            =   False
       Cancel          =   False
@@ -128,40 +159,9 @@ Begin DesktopWindow Window1
       FontSize        =   0.0
       FontUnit        =   0
       Height          =   20
-      Index           =   -2147483648
+      Index           =   0
       Italic          =   False
-      Left            =   470
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      MacButtonStyle  =   0
-      Scope           =   0
-      TabIndex        =   3
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Tooltip         =   ""
-      Top             =   260
-      Transparent     =   False
-      Underline       =   False
-      Visible         =   True
-      Width           =   80
-   End
-   Begin DesktopButton Button5
-      AllowAutoDeactivate=   True
-      Bold            =   False
-      Cancel          =   False
-      Caption         =   "win4"
-      Default         =   False
-      Enabled         =   True
-      FontName        =   "System"
-      FontSize        =   0.0
-      FontUnit        =   0
-      Height          =   20
-      Index           =   -2147483648
-      Italic          =   False
-      Left            =   67
+      Left            =   169
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   True
@@ -173,104 +173,134 @@ Begin DesktopWindow Window1
       TabPanelIndex   =   0
       TabStop         =   True
       Tooltip         =   ""
-      Top             =   299
+      Top             =   81
       Transparent     =   False
       Underline       =   False
       Visible         =   True
-      Width           =   80
+      Width           =   129
+   End
+   Begin DesktopButton btn_event
+      AllowAutoDeactivate=   True
+      Bold            =   False
+      Cancel          =   False
+      Caption         =   "Button"
+      Default         =   False
+      Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
+      Height          =   20
+      Index           =   1
+      Italic          =   False
+      Left            =   169
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      MacButtonStyle  =   0
+      Scope           =   0
+      TabIndex        =   5
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   131
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   True
+      Width           =   129
+   End
+   Begin DesktopButton btn_event
+      AllowAutoDeactivate=   True
+      Bold            =   False
+      Cancel          =   False
+      Caption         =   "Button"
+      Default         =   False
+      Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
+      Height          =   20
+      Index           =   2
+      Italic          =   False
+      Left            =   169
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      MacButtonStyle  =   0
+      Scope           =   0
+      TabIndex        =   6
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   182
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   True
+      Width           =   129
+   End
+   Begin DesktopButton Button5
+      AllowAutoDeactivate=   True
+      Bold            =   False
+      Cancel          =   False
+      Caption         =   "Any event ..."
+      Default         =   False
+      Enabled         =   True
+      FontName        =   "System"
+      FontSize        =   0.0
+      FontUnit        =   0
+      Height          =   20
+      Index           =   -2147483648
+      Italic          =   False
+      Left            =   169
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      MacButtonStyle  =   0
+      Scope           =   0
+      TabIndex        =   7
+      TabPanelIndex   =   0
+      TabStop         =   True
+      Tooltip         =   ""
+      Top             =   245
+      Transparent     =   False
+      Underline       =   False
+      Visible         =   True
+      Width           =   129
    End
 End
 #tag EndDesktopWindow
 
 #tag WindowCode
-	#tag Event
-		Sub Opening()
-		  v = new clVehicle
-		  s = new clMyCarData
+	#tag Method, Flags = &h0
+		Sub LoadUI(srcGeneral as clMyCarData)
+		  
+		  self.currentCommonData = srcGeneral
+		  
+		   
+		  for idx as integer = 0 to srcGeneral.QuickAccessEvent.LastIndex
+		    var e as CarEventTypes = srcGeneral.QuickAccessEvent(idx)
+		    
+		    btn_event(idx).Caption = e.StringValue
+		    
+		    
+		  next
 		  
 		End Sub
-	#tag EndEvent
+	#tag EndMethod
 
 
 	#tag Property, Flags = &h0
-		s As clMyCarData
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		v As clVehicle
+		currentCommonData As clMyCarData
 	#tag EndProperty
 
 
 #tag EndWindowCode
 
-#tag Events Button1
-	#tag Event
-		Sub Pressed()
-		  TestPref
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events Button2
-	#tag Event
-		Sub Pressed()
-		  wnd_carInformation.Show
-		  wnd_carInformation.LoadUI s,v
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events Button3
-	#tag Event
-		Sub Pressed()
-		  
-		  if v.brand = "" then v.Brand = "Volvo"
-		  if v.model = "" then v.Model = "X40"
-		  if v.NumberPlate = "" then v.NumberPlate = "1-ABC-888"
-		  
-		  var c as new clEvent(1)
-		  c.eventType = CarEventTypes.PayToll
-		  
-		  wnd_Generic_Event.Show
-		  wnd_Generic_Event.LoadFromEvent(s, v, c)
-		  
-		  wnd_Generic_Event.Show
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events Button4
-	#tag Event
-		Sub Pressed()
-		  
-		  var wnds() as DesktopWindow
-		  
-		  
-		  wnds.add( new wnd_generic_Event())
-		  wnds.add(new wnd_carInformation)
-		  wnds.add(new wnd_configuration)
-		  
-		  for each wnd as DesktopWindow in wnds
-		    for each c as object in wnd.Controls
-		      System.DebugLog(wnd.Title + ":" + DesktopControl(c).Name)
-		      
-		    next
-		    
-		  next
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events Button5
-	#tag Event
-		Sub Pressed()
-		  
-		  
-		  var w as new wnd_standard
-		  
-		  w.LoadUI(s)
-		  
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag ViewBehavior
 	#tag ViewProperty
 		Name="Name"
